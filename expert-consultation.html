@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专家咨询</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+        }
+        .chat-bubble {
+            max-width: 80%;
+            border-radius: 1rem;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .chat-bubble.user {
+            background-color: #E3F2FD;
+            margin-left: auto;
+            border-bottom-right-radius: 0.25rem;
+        }
+        .chat-bubble.expert {
+            background-color: #F5F5F5;
+            margin-right: auto;
+            border-bottom-left-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航 -->
+    <div class="gradient-bg text-white p-4">
+        <div class="flex items-center space-x-4">
+            <a href="academy.html" class="text-white">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <div class="flex-1">
+                <h1 class="text-xl font-bold">专家咨询</h1>
+                <p class="text-sm opacity-80">张教授 在线</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 聊天区域 -->
+    <div class="p-4 pb-24">
+        <!-- 专家介绍卡片 -->
+        <div class="bg-white rounded-xl shadow-sm p-4 mb-4">
+            <div class="flex items-center space-x-4">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                     class="w-16 h-16 rounded-full object-cover">
+                <div>
+                    <h3 class="font-medium text-gray-800">张教授</h3>
+                    <p class="text-sm text-gray-500">果树栽培专家</p>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-400 text-sm">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="text-gray-500 text-xs ml-1">4.5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 text-sm text-gray-600">
+                <p>从事果树栽培研究20余年，擅长果树病虫害防治、果树修剪等技术指导。</p>
+            </div>
+        </div>
+
+        <!-- 聊天记录 -->
+        <div class="space-y-4">
+            <!-- 专家消息 -->
+            <div class="flex items-start space-x-2">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                     class="w-8 h-8 rounded-full object-cover">
+                <div class="chat-bubble expert">
+                    <p class="text-gray-800">您好！我是张教授，有什么可以帮到您的吗？</p>
+                    <span class="text-xs text-gray-500 mt-1 block">10:30</span>
+                </div>
+            </div>
+
+            <!-- 用户消息 -->
+            <div class="flex items-start justify-end space-x-2">
+                <div class="chat-bubble user">
+                    <p class="text-gray-800">您好，张教授！我的苹果树最近叶子发黄，不知道是什么原因？</p>
+                    <span class="text-xs text-gray-500 mt-1 block">10:32</span>
+                </div>
+            </div>
+
+            <!-- 专家消息 -->
+            <div class="flex items-start space-x-2">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                     class="w-8 h-8 rounded-full object-cover">
+                <div class="chat-bubble expert">
+                    <p class="text-gray-800">叶子发黄可能是由多种原因引起的，建议您先检查：</p>
+                    <ul class="list-disc pl-5 mt-2 text-gray-800">
+                        <li>土壤湿度是否合适</li>
+                        <li>是否有病虫害</li>
+                        <li>施肥情况</li>
+                    </ul>
+                    <p class="text-gray-800 mt-2">您可以拍几张照片发给我，我帮您具体分析一下。</p>
+                    <span class="text-xs text-gray-500 mt-1 block">10:33</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 输入框 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4">
+        <div class="flex items-center space-x-2">
+            <button class="text-gray-500">
+                <i class="fas fa-camera text-xl"></i>
+            </button>
+            <input type="text" placeholder="输入您的问题..." 
+                   class="flex-1 bg-gray-100 rounded-full px-4 py-2 focus:outline-none">
+            <button class="text-green-600">
+                <i class="fas fa-paper-plane text-xl"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html> 

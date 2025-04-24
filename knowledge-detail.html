@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>果林知识详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航 -->
+    <div class="gradient-bg text-white p-4">
+        <div class="flex items-center space-x-4">
+            <a href="academy.html" class="text-white">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="text-xl font-bold">果树病虫害防治</h1>
+        </div>
+    </div>
+
+    <!-- 主要内容区 -->
+    <div class="p-4">
+        <!-- 文章头部 -->
+        <div class="bg-white rounded-xl shadow-sm p-4 mb-4">
+            <img src="https://images.unsplash.com/photo-1516257984-1c7b0b5e5e5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                 class="w-full h-48 object-cover rounded-lg mb-4">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-2">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                         class="w-8 h-8 rounded-full object-cover">
+                    <span class="text-sm text-gray-600">张教授</span>
+                </div>
+                <span class="text-sm text-gray-500">2024-03-15</span>
+            </div>
+            <div class="flex space-x-4 text-gray-500 text-sm">
+                <span><i class="far fa-eye mr-1"></i> 1.2k</span>
+                <span><i class="far fa-thumbs-up mr-1"></i> 256</span>
+                <span><i class="far fa-comment mr-1"></i> 48</span>
+            </div>
+        </div>
+
+        <!-- 文章内容 -->
+        <div class="bg-white rounded-xl shadow-sm p-4">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">常见果树病虫害及防治方法</h2>
+            
+            <div class="space-y-4 text-gray-700">
+                <p>果树病虫害是影响果树生长和果实品质的重要因素。本文将介绍几种常见的果树病虫害及其防治方法。</p>
+                
+                <h3 class="font-medium text-gray-800 mt-6 mb-2">1. 蚜虫防治</h3>
+                <p>蚜虫是果树常见的害虫之一，主要危害嫩叶和嫩梢。防治方法：</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>定期检查果树，发现蚜虫及时处理</li>
+                    <li>使用生物农药进行防治</li>
+                    <li>保持果园通风透光</li>
+                </ul>
+
+                <h3 class="font-medium text-gray-800 mt-6 mb-2">2. 白粉病防治</h3>
+                <p>白粉病是果树常见的真菌性病害，主要危害叶片和果实。防治方法：</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>选择抗病品种</li>
+                    <li>合理施肥，增强树势</li>
+                    <li>发病初期及时喷药防治</li>
+                </ul>
+
+                <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                    <h4 class="font-medium text-green-800 mb-2">专家建议</h4>
+                    <p class="text-green-700">建议在病虫害防治过程中，优先使用生物防治方法，减少化学农药的使用，保护生态环境。</p>
+                </div>
+            </div>
+
+            <!-- 相关推荐 -->
+            <div class="mt-8">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">相关推荐</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-50 rounded-lg p-3">
+                        <img src="https://images.unsplash.com/photo-1516257984-1c7b0b5e5e5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                             class="w-full h-24 object-cover rounded-lg mb-2">
+                        <h4 class="text-sm font-medium text-gray-800">果树修剪技术</h4>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-3">
+                        <img src="https://images.unsplash.com/photo-1516257984-1c7b0b5e5e5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                             class="w-full h-24 object-cover rounded-lg mb-2">
+                        <h4 class="text-sm font-medium text-gray-800">果树施肥指南</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部操作栏 -->
+        <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4">
+            <div class="flex items-center justify-between">
+                <button class="flex items-center space-x-2 text-gray-600">
+                    <i class="far fa-thumbs-up text-xl"></i>
+                    <span>点赞</span>
+                </button>
+                <button class="flex items-center space-x-2 text-gray-600">
+                    <i class="far fa-comment text-xl"></i>
+                    <span>评论</span>
+                </button>
+                <button class="flex items-center space-x-2 text-gray-600">
+                    <i class="far fa-bookmark text-xl"></i>
+                    <span>收藏</span>
+                </button>
+                <button class="flex items-center space-x-2 text-gray-600">
+                    <i class="fas fa-share-alt text-xl"></i>
+                    <span>分享</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
